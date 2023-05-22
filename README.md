@@ -549,3 +549,69 @@ To https://github.com/christauwicyeza/christauwicyeza-Gym-Git-Exercise.git
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 PS D:\christauwicyeza-Gym-Git-Exercise> 
 ```
+
+## bundle four 
+
+### Exercise one 
+```bash
+PS D:\christauwicyeza-Gym-Git-Exercise> git checkout main   
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 4 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+PS D:\christauwicyeza-Gym-Git-Exercise> git pull
+Updating 99585b8..d24ecac
+Fast-forward
+ faq.html      | 10 ++++++++++
+ services.html |  2 +-
+ 2 files changed, 11 insertions(+), 1 deletion(-)
+ create mode 100644 faq.html
+PS D:\christauwicyeza-Gym-Git-Exercise> git remote add git-copy https://github.com/cherror: failed to push some refs to 'https://github.com/christauwicyeza/GYM-exercise_2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS D:\christauwicyeza-Gym-Git-Exercise> git pull git-copy main
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 607 bytes | 11.00 KiB/s, done.
+From https://github.com/christauwicyeza/GYM-exercise_2
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> git-copy/main
+fatal: refusing to merge unrelated histories
+PS D:\christauwicyeza-Gym-Git-Exercise> 
+PS D:\christauwicyeza-Gym-Git-Exercise> git push git-copy main 
+Enumerating objects: 37, done.
+Counting objects: 100% (37/37), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (34/34), done.
+Writing objects: 100% (37/37), 5.73 KiB | 419.00 KiB/s, done.
+Total 37 (delta 19), reused 3 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (19/19), done.
+To https://github.com/christauwicyeza/GYM-exercise_2.git
+ + 2388af2...96c8554 main -> main (forced update)
+PS D:\christauwicyeza-Gym-Git-Exercise> 
+```
+
+## exercise two
+
+
+```bash
+ git checkout -b ft/footer
+  63 git add .
+  64 git commit -m "Add initial changes to footer"
+  65 # Make the necessary changes
+  66 git add .
+  67 git commit -m "Add additional changes to footer"
+  68 git push origin ft/footer
+  69 git checkout main
+  70 git checkout -b ft/squashing
+  71 git merge --squash ft/footer
+  72 git commit -m "footer changes squashing"
+  73 git push origin ft/squashing 
+```
+
+### Bundle 5
+
+## Exercise one 
